@@ -1,32 +1,23 @@
-\documentclass[uplatex, twocolumn,10pt]{jsarticle}
+\documentclass[uplatex]{jsarticle}
 
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{latexsym}
 \usepackage{bmpsize}
 \usepackage{url}
 \usepackage{comment}
+\usepackage{tcolorbox}
 
-\def\Underline{\setbox0\hbox\bgroup\let\\\endUnderline}
-\def\endUnderline{\vphantom{y}\egroup\smash{\underline{\box0}}\\}
-
-\newcommand{\ttt}[1]{\texttt{#1}}
 
 \begin{document}
-
-\title{\bf{\LARGE{Sample of \LaTeX  Document} \\ \Large{\LaTeX のサンプルコード}}}
-\author{PhysKen\\物理基礎}
-\date{2019年6月12日(水)}
-\maketitle
+\begin{flushleft}
+物理基礎\\力学　第1回    
+\end{flushleft}
 
 
 \section{はじめに}
-\begin{figure}[t]
-    \begin{center}
-        \includegraphics[width=7cm]{image/syokuji_computer.png}
-        \caption{パソコンの前でご飯を食べる人のイラスト}
-        \label{fig:syokuji_computer}
-    \end{center}
-\end{figure}
+\begin{tcolorbox}
+    box contents
+    \end{tcolorbox}
 
 パソコンの前でご飯を食べることはよくある。パソコンの前でご飯を食べる人のイラストを図\ref{fig:syokuji_computer}に示す。
 このイラストは、規約の範囲内であれば、個人、法人、商用、非商用問わず無料で利用できることでおなじみの、{\bf かわいいフリー素材 いらすとや}\cite{irasutoya}より引用した。
@@ -34,11 +25,5 @@
 \section{おわりに}
 やっぱり{\bf いらすとや}のイラストはすばらしい。
 
-\begin{thebibliography}{99}
-    \bibitem{irasutoya} いらすとや, last access 2019.6.13 \url{https://www.irasutoya.com/}
-
-
-
-\end{thebibliography}
 
 \end{document}
